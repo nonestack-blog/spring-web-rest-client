@@ -1,13 +1,13 @@
-package com.nonestack.springwebrestclient;
+package com.nonestack.apiclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringWebRestClientApplication {
+public class ApiClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringWebRestClientApplication.class, args);
+        SpringApplication.run(ApiClientApplication.class, args);
     }
 
 }

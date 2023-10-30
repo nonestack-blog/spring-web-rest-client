@@ -1,10 +1,10 @@
-package com.nonestack.springwebrestclient;
+package com.nonestack.apiclient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringWebRestClientApplicationTests {
+class ApiClientApplicationTests {
 
     @Test
     void contextLoads() {
