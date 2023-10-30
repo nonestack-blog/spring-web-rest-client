@@ -14,7 +14,7 @@ You will build a Spring Boot web application that consumes and external api with
 
 - Navigate to https://start.spring.io.
 
-- define the project name example: `spring-boot-get-started`
+- define the project name example: `spring-web-rest-client`
 - Choose Project **Maven** and the language  **Java**.
 - Choose Your **Java** version ex: **17**
 - Click add dependencies and select:
@@ -79,7 +79,8 @@ ResponseEntity<Product> response = restClient.post()
 
 ## Delete Resource
 
-To perform a `DELETE` request you just need to use the `delete()`
+To perform a `DELETE` request you just you need to use the `delete()`
+
 ```java
  ResponseEntity<Product> response = restClient.delete()
             .uri("/products/{productId}", productId)
@@ -101,7 +102,7 @@ ResponseEntity<Product> response = restClient.get()
             .toEntity(Product.class);
 ```
 For more flexibility of how you want to handle the response, the `exchange` would be the option to go with, 
-also use need to provide an explicit mapping to the desire Type
+also you need to provide an explicit mapping for your desire Type, eg : `ObjectMapper`
 
 ```java
 ObjectMapper mapper = new ObjectMapper();
