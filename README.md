@@ -12,9 +12,8 @@ You will build a Spring Boot web application that consumes and external api with
 
 ## <a name="setup-project-with-spring-initializr" aria-label="setup-project-with-spring-initializr" id="setup-project-with-spring-initializr" href="#setup-project-with-spring-initializr"></a>Setup Project With Spring Initializr
 
-- Navigate to https://start.spring.io.
-
-- define the project name example: `spring-web-rest-client`
+- Navigate to [Spring initializr](https://start.spring.io).
+- Define the project name example: `spring-web-rest-client`
 - Choose Project **Maven** and the language  **Java**.
 - Choose Your **Java** version ex: **17**
 - Click add dependencies and select:
