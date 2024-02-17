@@ -2,15 +2,15 @@
 
 Spring Framework **6.1** introduces `RestClient` a new **Fluent API** to make **synchronous HTTP requests**
 
-## What You Will build
+## <a name="what-you-will-build" aria-label="what-you-will-build" id="what-you-will-build" href="#what-you-will-build"></a>What You Will build
 You will build a Spring Boot web application that consumes and external api with RestClient.
 
-## What You Need
+## <a name="what-you-need" aria-label="what-you-need" id="what-you-need" href="#what-you-need"></a>What You Need
 - A favorite text editor or IDE
 - JDK 1.8 or later
 - Gradle 4+ or Maven 3.2+
 
-## Setup Project With Spring Initializr
+## <a name="setup-project-with-spring-initializr" aria-label="setup-project-with-spring-initializr" id="setup-project-with-spring-initializr" href="#setup-project-with-spring-initializr"></a>Setup Project With Spring Initializr
 
 - Navigate to https://start.spring.io.
 
@@ -24,12 +24,12 @@ You will build a Spring Boot web application that consumes and external api with
 
 Unzip the Downloaded Zip and open the Project using your favorite text editor or IDE
 
-## Overview
+## <a name="overview" aria-label="overview" id="overview" href="#overview"></a>Overview
 
 In this tutorial, we’re going to demonstrate a range of operations where and How the `RestClient` can be used.
 
 
-## Instantiate the RestClient
+## <a name="instantiate-the-rest-client" aria-label="instantiate-the-rest-client" id="instantiate-the-rest-client" href="#instantiate-the-rest-client"></a>Instantiate the RestClient
 
 In order to do that you can simply use the static method `create()`
 
@@ -44,7 +44,7 @@ private final RestClient restClient = RestClient.builder()
     .build();
 ```
 
-## Retrieve Resource(s)
+## <a name="retrieve-resource-s-" aria-label="retrieve-resource-s-" id="retrieve-resource-s-" href="#retrieve-resource-s-"></a>Retrieve Resource(s)
 
 - Using the `toEntity` to return `ResponseEntity` with the body of a given type
 - Once you get the `ResponseEntity` object you can check the response `statusCode` and the `headers`
@@ -65,7 +65,7 @@ ResponseEntity<Product> response = restClient.get()
     .toEntity(Product.class);
 ```
 
-## Post Resource
+## <a name="post-resource" aria-label="post-resource" id="post-resource" href="#post-resource"></a>Post Resource
 
 To perform a `POST` request you just need to use the `post()` and specify the `contentType` and the `body`
 ```java
@@ -77,7 +77,7 @@ ResponseEntity<Product> response = restClient.post()
     .toEntity(Product.class);
 ```
 
-## Delete Resource
+## <a name="delete-resource" aria-label="delete-resource" id="delete-resource" href="#delete-resource"></a>Delete Resource
 
 To perform a `DELETE` request you just you need to use the `delete()`
 
@@ -88,7 +88,7 @@ To perform a `DELETE` request you just you need to use the `delete()`
             .toEntity(Product.class);
 ```
 
-## Error handling
+## <a name="error-handling" aria-label="error-handling" id="error-handling" href="#error-handling"></a>Error handling
 
 `RestClient` throws `RestClientResponseException` when receiving a 4xx or 5xx status code. You can catch the exception and throw a customized exception instead:
 
@@ -119,13 +119,13 @@ Product product = restClient.get()
     });
 ```
 
-## Summary
+## <a name="summary" aria-label="summary" id="summary" href="#summary"></a>Summary
 
 Congratulations 🎉 ! You've covered the main features of the new api `RestClient`, You can notice that the new API is more straightforward (fluent) to handle Http Requests compared to the old `RestTemplate`
 
-## Github
+## <a name="github" aria-label="github" id="github" href="#github"></a>Github
 The tutorial can be found here on [GitHub](https://github.com/nonestack-blog/spring-web-rest-client) 👋
 
-## Blog
+## <a name="blog" aria-label="blog" id="blog" href="#blog"></a>Blog
 
 Check new tutorials on [nonestack](https://www.nonestack.com) 👋
